@@ -1,0 +1,36 @@
+{
+	"iBints":{
+		"companyName": "iBints",
+		"companyFullName": "iBints Pvt Ltd",
+		"companyWelcomeTag":"Your security partner.",
+		"navbar":{
+			"homeTag": "Home",
+			"aboutTag": "About",
+			"solutionsTag": "Solutions",
+			"clientRegistrations":"Client registrations",
+			"contactTag":"Contact us"
+		},
+		"homePage":{
+			"welcomeMessage":{
+				"welcomeMessageHeader":"Welcome to iBints - You are secure in our hands.",
+				"welcomeMessageContent_para_1":"In today's landscape of technical competence, supporting you with the best state-of-the-art IT services is one of the most enterprising multi-disciplinary IT companies in Kerala-India, iBints pvt ltd. Established with the vision to provide cost-effective high quality IT, Telecom, Technical and Security solutions, iBints was created by the team who believed in shaping a better future by harnessing the immense potential of technology.",
+				"welcomeMessageContent_para_2":"Equipped with a proactive work force combined with strategic thinking, iBints Systems delivers technology-enabled IT and Infrastructure enablement services. Our solutions are designed to ensure that intelligence can be distributed throughout the enterprise, connecting employees, suppliers, business partners, users and systems, clients and information ",
+				"buttonText":"Find Out More"
+			},
+			"activityHeader":"Find out our activities!",
+			"seOurVision":"See our vision",
+			"about":{
+				"aboutHeader":"We've got what you need!",
+				"about_para_1":"We constantly scale our IT services and solutions against global quality standards. Our innovative solutions are designed for both commercial and business enterprises as well as small and medium-sized businesses. IBINTS PVT LTD is the leading security system installation company with the dedicated rich experienced employees to provide end to end Infrastructure Products, solutions and Services. IBINTS was born out of a commitment to quality services and a long term vision based on continuous customer care, innovation and transparency.  we at iBints recreate complex network solutions at competitive prices while conforming to all ethical standards.",
+				"about_para_2":"iBints includes infrastructure enablement and support services, market tools & design services. iBints pioneers in offering up-to-date technology and customized time bound IT solutions by leveraging our strategic alliances with the leading technology providers of the world.",
+				"about_para_3":"We are providing wide range of services such as installation of security systems- CCTV, access control systems, security alarm system, fire alarm, telephone PABX, q-management system, POS System, vehicle GPS/GPRS Tracking system, gate barrier, parking management systems, web development, structured cabling, optical fiber solution, networking solutions and telecom solutions which has helped us maintain long-term strategic relationships with our reputed clients. Our comprehensive security system solutions are ideal for the protection of all kinds of office spaces."
+			},
+			"vision":{
+				"visionHeader":"We have a vision & we're on a mission!",
+				"vision_para_1":"We have a vision to reach a unique landmark in billion user’s network. Thereby helping people stay connected, anytime, anywhere. To partner with our customer and understanding their unique needs and then use our expertise in meeting them beyond expectation. To deliver products and services of the highest quality adding more value to our customers.",
+				"vision_para_2":"Establishment of brand name and Manufacturing of certain electronics products in short span. Development of many schemes, offers and projects which getting to our valuable customers.",
+				"vision_para_3":"Our mission is to build long-term relationships with our customers and clients and provide exceptional customer services by pursuing business through innovation and advanced technology."
+			}
+		}
+	}
+}
