@@ -3,6 +3,7 @@ import resourceFileActionCreator = require('../actioncreators/resourcefileaction
 import ResourceFileStore = require('../stores/resourcefilestore');
 import { Header } from  '../../src/components/header';
 import { Footer } from  '../../src/components/footer';
+import ContactForm = require( '../../src/components/contactform');
 
 interface Props { 
 	name?:string;
@@ -38,11 +39,16 @@ export class  NavigationBar extends React.Component<Props, State> {
                     <Header 
                         resourceFileData={this.resourceFileData}
                         scrollToAbout={this.state.selectedLink === 'About'}
-                    /> : null;        
+                    /> : null;
+        let contactPage = this.resourceFileData && this.state.selectedLink === 'Contact us' ? 
+                    <ContactForm 
+                        resourceFileData={this.resourceFileData}
+                    /> : null;
         return (
             <div>
                 {this.renderNavbar()}
                 {header}
+                {contactPage}
                 <Footer name="footer"/>
             </div>
         );

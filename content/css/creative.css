@@ -510,3 +510,6 @@ figure {
   filter: grayscale(0);
 }
 /*------------------------------------------*/
+.line-dark {
+  border-top-color: black;
+}
