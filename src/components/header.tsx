@@ -1,11 +1,11 @@
 import React = require ('react');
-import { About } from  '../../src/components/about';
+import About = require ('../../src/components/about');
 
 // The props
 interface Props 
 { 
 	resourceFileData?: any;
-	scrollToAbout?: boolean;
+	scrollToView?: string;
 }
 
 // The state
@@ -25,7 +25,7 @@ export class Header extends React.Component<Props, State> {
 	// The render method
 	public render() {
 		let about = this.props.resourceFileData ?
-                    <About resourceFileData={this.props.resourceFileData}/> : null;
+                    <About resourceFileData={this.props.resourceFileData} scrollToView={this.props.scrollToView}/> : null;
 		return (
 			<div>
 				{this.renderHeader()}

@@ -34,6 +34,16 @@
 		},
 		"contactPage":{
 			"heading": "Send us a message.",
+			"contactDetails":"Contact Details",
+			"address":{
+				"line1":"Vembayam",
+				"line2":"Kuthirakulam PO",
+				"line3":"Trivandrum-695615",
+				"line4":"Kerala-India",
+				"phone":"Phone: +917592915008",
+				"email":"Email: info@ibints.com",
+				"mailAddress":"mailto:info@ibints.com"
+			},
 			"labels":{
 				"name":"Full name",
 				"namePlaceholder":"Please enter your name here.",

@@ -24,6 +24,7 @@ a {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
   color: #F05F40;
+  cursor: pointer;
 }
 a:hover,
 a:focus {
@@ -510,6 +511,14 @@ figure {
   filter: grayscale(0);
 }
 /*------------------------------------------*/
+.line-primary {
+  border-top-color: #f7431d;
+  margin-left: 0px;
+  max-width: 250px;
+}
+
 .line-dark {
   border-top-color: black;
+  margin-left: 0px;
+  max-width: 200px;
 }

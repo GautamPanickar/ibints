@@ -38,7 +38,7 @@ export class  NavigationBar extends React.Component<Props, State> {
                                                 this.state.selectedLink === 'About') ? 
                     <Header 
                         resourceFileData={this.resourceFileData}
-                        scrollToAbout={this.state.selectedLink === 'About'}
+                        scrollToView={this.state.selectedLink}
                     /> : null;
         let contactPage = this.resourceFileData && this.state.selectedLink === 'Contact us' ? 
                     <ContactForm 
@@ -64,36 +64,25 @@ export class  NavigationBar extends React.Component<Props, State> {
                             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                 <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                             </button>
-                            <a className="navbar-brand page-scroll" href="#page-top">
-                                {this.resourceFileData.companyName}
-                            </a>
+                            <a className="navbar-brand page-scroll">{this.resourceFileData.companyName}</a>
                         </div>
                         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul className="nav navbar-nav navbar-right">
                                 <li>
-                                    <a className="page-scroll" href="#home" onClick={this.handleOnClick}>
-                                        {this.resourceFileData.navbar.homeTag}
+                                    <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.homeTag}</a>
+                                </li>
+                                <li>
+                                    <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.aboutTag}</a>
+                                </li>
+                                <li>
+                                    <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.solutionsTag}</a>
+                                </li>
+                                <li>
+                                    <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.clientRegistrations}
                                     </a>
                                 </li>
                                 <li>
-                                    <a className="page-scroll" href="#about" onClick={this.handleOnClick}>
-                                        {this.resourceFileData.navbar.aboutTag}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="page-scroll" href="#solutions" onClick={this.handleOnClick}>
-                                        {this.resourceFileData.navbar.solutionsTag}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="page-scroll" href="#clientreg" onClick={this.handleOnClick}>
-                                        {this.resourceFileData.navbar.clientRegistrations}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className="page-scroll" href="#contact" onClick={this.handleOnClick}>
-                                        {this.resourceFileData.navbar.contactTag}
-                                    </a>
+                                    <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.contactTag}</a>
                                 </li>
                             </ul>
                         </div>
