@@ -31,6 +31,34 @@
 				"vision_para_2":"Establishment of brand name and Manufacturing of certain electronics products in short span. Development of many schemes, offers and projects which getting to our valuable customers.",
 				"vision_para_3":"Our mission is to build long-term relationships with our customers and clients and provide exceptional customer services by pursuing business through innovation and advanced technology."
 			}
+		},
+		"contactPage":{
+			"heading": "Send us a message.",
+			"contactDetails":"Contact Details",
+			"address":{
+				"line1":"Vembayam",
+				"line2":"Kuthirakulam PO",
+				"line3":"Trivandrum-695615",
+				"line4":"Kerala-India",
+				"phone":"Phone: +917592915008",
+				"email":"Email: info@ibints.com",
+				"mailAddress":"mailto:info@ibints.com"
+			},
+			"labels":{
+				"name":"Full name",
+				"namePlaceholder":"Please enter your name here.",
+				"phone":"Phone number",
+				"phonePlaceholder":"Please enter your phone number here.",
+				"email":"Email address",
+				"emailPlaceholder":"Please enter your Email address here.",
+				"subject":"Subject",
+				"subjectPlaceholder":"Please provide a subject for your message here.",
+				"message":"Message",
+				"messagePlaceholder":"Please write your message here."
+			}
+		},
+		"solutionsPage":{
+			"heading":"Our products and solutions."
 		}
 	}
 }
