@@ -4,6 +4,7 @@ import ResourceFileStore = require('../stores/resourcefilestore');
 import { Header } from  '../../src/components/header';
 import { Footer } from  '../../src/components/footer';
 import ContactForm = require( '../../src/components/contactform');
+import Solutions =  require('../../src/components/solutionscontainer');
 
 interface Props { 
 	name?:string;
@@ -44,11 +45,16 @@ export class  NavigationBar extends React.Component<Props, State> {
                     <ContactForm 
                         resourceFileData={this.resourceFileData}
                     /> : null;
+        let solutionsPage = this.resourceFileData && this.state.selectedLink === 'Solutions' ? 
+                    <Solutions 
+                        resourceFileData={this.resourceFileData}
+                    /> : null;
         return (
             <div>
                 {this.renderNavbar()}
                 {header}
                 {contactPage}
+                {solutionsPage}
                 <Footer name="footer"/>
             </div>
         );

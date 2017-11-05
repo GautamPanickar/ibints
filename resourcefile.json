@@ -56,6 +56,9 @@
 				"message":"Message",
 				"messagePlaceholder":"Please write your message here."
 			}
+		},
+		"solutionsPage":{
+			"heading":"Our products and solutions."
 		}
 	}
 }
