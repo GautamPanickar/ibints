@@ -58,7 +58,147 @@
 			}
 		},
 		"solutionsPage":{
-			"heading":"Our products and solutions."
+			"heading":"Our products and solutions.",
+			"solutionsListItems":{
+				"item1":{
+					"name":"CCTV systems",
+					"content":{
+
+					}
+				},
+				"item2":{
+					"name":"ANPR camera",
+					"content":{
+
+					}
+				},
+				"item3":{
+					"name":"Access control system",
+					"content":{
+						
+					}
+				},
+				"item4":{
+					"name":"Biometric time attendance system",
+					"content":{
+						
+					}
+				},
+				"item5":{
+					"name":"Video & audio door phone",
+					"content":{
+						
+					}
+				},
+				"item6":{
+					"name":"Security alarm system - Burglar & Intruder",
+					"content":{
+						
+					}
+				},
+				"item7":{
+					"name":"Fire alarm system",
+					"content":{
+						
+					}
+				},
+				"item8":{
+					"name":"Telephone PABX",
+					"content":{
+						
+					}
+				},
+				"item9":{
+					"name":"Q-management system",
+					"content":{
+						
+					}
+				},
+				"item10":{
+					"name":"Automatic gate & barrier",
+					"content":{
+						
+					}
+				},
+				"item11":{
+					"name":"Turnstile gate/flap/swing barrier",
+					"content":{
+						
+					}
+				},
+				"item12":{
+					"name":"POS system(point of sale), Barcode reader",
+					"content":{
+						
+					}
+				},
+				"item13":{
+					"name":"Antitheft system",
+					"content":{
+						
+					}
+				},
+				"item14":{
+					"name":"GPS & GPRS vehivle tracking system",
+					"content":{
+						
+					}
+				},
+				"item15":{
+					"name":"Motion sensor installation",
+					"content":{
+						
+					}
+				},
+				"item16":{
+					"name":"Metal detector & scanner",
+					"content":{
+						
+					}
+				},
+				"item17":{
+					"name":"X-ray baggage scanner",
+					"content":{
+						
+					}
+				},
+				"item18":{
+					"name":"Under vehicle scanner",
+					"content":{
+						
+					}
+				},
+				"item19":{
+					"name":"Parking management/guidance/counting system",
+					"content":{
+						
+					}
+				},
+				"item20":{
+					"name":"Audio visual system",
+					"content":{
+						
+					}
+				},
+				"item21":{
+					"name":"Structured cabling solution",
+					"content":{
+						
+					}
+				},
+				"item22":{
+					"name":"Other services",
+					"content":{
+						
+					}
+				},
+				"item19":{
+					"name":"Parking management/guidance/counting system",
+					"content":{
+						
+					}
+				}
+			}
 		}
 	}
 }
