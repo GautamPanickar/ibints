@@ -27,7 +27,7 @@ class SolutionsListGroup extends React.Component<Props, State> {
 			</div>
 		);
 	}
-
+  
 	public componentDidMount() {
 		solutionsStore.instance.addListener(solutionsStore.SolutionsStore.SOLUTION_ITEM_SELECTED, this.onSolutionItemSelection);
 	}
