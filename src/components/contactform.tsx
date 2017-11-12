@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { TextField } from '../components/textfield'; 
+import { TextArea } from '../components/textarea'; 
 
 interface Props{
 	resourceFileData?: any;
@@ -56,9 +57,11 @@ class ContactForm extends React.Component<Props, State> {
 			                    	id='subject'
 			                    	placeHolder={this.props.resourceFileData.contactPage.labels.subjectPlaceholder}
 			                    />
-			                    <TextField labelName={this.props.resourceFileData.contactPage.labels.message}
+			                    <TextArea labelName={this.props.resourceFileData.contactPage.labels.message}
 			                    	id='message'
 			                    	placeHolder={this.props.resourceFileData.contactPage.labels.messagePlaceholder}
+			                    	rows={5}
+			                    	columns={10}
 			                    />
 			                    <button id='sendMessageButton' className="btn btn-default-dark">Send Message</button>
 			                </form>

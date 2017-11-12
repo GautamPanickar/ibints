@@ -6,16 +6,9 @@ interface Props {
 	resourceFileData?: any;
 }
 
-interface State {
-	selectedIndex: number;
-}
-
-class SolutionsListGroup extends React.Component<Props, State> {
-	constructor(props: Props, state: State){
-		super(props, state);
-		this.state = {
-			selectedIndex: 0
-		};
+class SolutionsListGroup extends React.Component<Props, null> {
+	constructor(props: Props){
+		super(props);
 	}
 
 	public render() {
@@ -26,37 +19,25 @@ class SolutionsListGroup extends React.Component<Props, State> {
 				</div>
 			</div>
 		);
-	}
-  
-	public componentDidMount() {
-		solutionsStore.instance.addListener(solutionsStore.SolutionsStore.SOLUTION_ITEM_SELECTED, this.onSolutionItemSelection);
-	}
-
-	public componentWillUnmount() {
-		solutionsStore.instance.removeListener(solutionsStore.SolutionsStore.SOLUTION_ITEM_SELECTED, this.onSolutionItemSelection);
-	}
+	}  
 
 	// Gets the list items to display
 	public get itemsToDisplay(): Array<JSX.Element> {
 		let listItems:Array<JSX.Element> = new Array<JSX.Element>();
+		let selectedIndex = solutionsStore.instance.selectedSolutionItemIndex;
 		let dataList = this.props.resourceFileData.solutionsPage.solutionsListItems;
 		let dataArray = Object.keys(dataList).map(function(i) { return dataList[i] });
 		let index: number = 0;
 		for(let data of dataArray) {
 			index++;
 			listItems.push(<SolutionsListItem
-							id={index}
-							text={data.name}
-							isActive={this.state.selectedIndex === index}/>);
+						id={index}
+						text={data.name}
+						isActive={selectedIndex === 0 ? selectedIndex === index - 1:
+						 selectedIndex === index}/>);
+			
 		}
 		return listItems;
-	}
-
-	// On selecting a solution item.
-	private onSolutionItemSelection = () =>{
-		this.setState({
-			selectedIndex: solutionsStore.instance.selectedSolutionItemIndex
-		});
 	}
 }
 

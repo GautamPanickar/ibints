@@ -528,3 +528,11 @@ figure {
   margin-left: 0px;
   max-width: 450px;
 }
+
+hr.primary {
+  border-color: #f7431d;
+}
+
+.center-alignment{
+  text-align: center;
+}
