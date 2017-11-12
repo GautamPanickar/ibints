@@ -579,7 +579,8 @@
 			"news2":{
 				"caption":"Campaign for security awareness ",
 				"content":{
-					"para1":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month."
+					"para1":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month.",
+					"para2":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month."
 				},
 				"image":"../img/sample.png",
 				"date":"11/11/2017"
