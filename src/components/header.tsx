@@ -2,6 +2,7 @@ import React = require ('react');
 import ReactDOM = require ('react-dom');
 import About = require ('../../src/components/about');
 import { Vision } from '../../src/components/vision';
+import NewsContainer = require ('../../src/components/newscontainer');
 
 // The props
 interface Props 
@@ -35,9 +36,12 @@ export class Header extends React.Component<Props, null> {
                      ref={'about'}/> : null;
         let vision = this.props.resourceFileData ?
         			 <Vision resourceFileData={this.props.resourceFileData} ref={'vision'}/> : null;
+        let news = this.props.resourceFileData ?
+        			<NewsContainer resourceFileData={this.props.resourceFileData} ref={'news'}/> : null;
 		return (
 			<div id='headerElement'>
 				{this.renderHeader()}
+				{news}
 				{about}
 				{vision}
 			</div>
@@ -59,7 +63,7 @@ export class Header extends React.Component<Props, null> {
 	                        <hr></hr>
 	                        <p>{this.props.resourceFileData.homePage.welcomeMessage.welcomeMessageContent_para_1}
 	                        {this.props.resourceFileData.homePage.welcomeMessage.welcomeMessageContent_para_2}</p>
-	                        <button className="btn btn-primary btn-xl page-scroll" onClick={this.scrollToAbout}>
+	                        <button className="btn btn-primary btn-xl page-scroll" onClick={this.scrollToNews}>
 	                        	{this.props.resourceFileData.homePage.welcomeMessage.buttonText}
 	                        </button>
 	                    </div>
@@ -82,12 +86,18 @@ export class Header extends React.Component<Props, null> {
 			ReactDOM.findDOMNode(this.refs.home).scrollIntoView({block: 'start', behavior: 'smooth'});
 		} else if (this.props.scrollToView === 'About') {
 			this.scrollToAbout();
-		}
+		} else if (this.props.scrollToView === 'News') {
+			this.scrollToNews();
+		} 
 	}
 
 	// Call back from about component, happens on clicking 'see our vision' button.
 	private scrollToVision =() => {		
-		console.log('sdfgdfhgsdfhfhg');
 		ReactDOM.findDOMNode(this.refs.vision).scrollIntoView({block: 'start', behavior: 'smooth'});
+	}
+
+	// Scrolls to news container
+	private scrollToNews =(): void => {
+		ReactDOM.findDOMNode(this.refs.news).scrollIntoView({block: 'start', behavior: 'smooth'});
 	}
 }

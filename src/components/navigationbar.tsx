@@ -36,7 +36,7 @@ export class  NavigationBar extends React.Component<Props, State> {
     // The render method
     public render() {
         let header = this.resourceFileData && (this.state.selectedLink === null || this.state.selectedLink === 'Home' ||
-                                                this.state.selectedLink === 'About') ? 
+                                                this.state.selectedLink === 'About' || this.state.selectedLink === 'News') ? 
                     <Header 
                         resourceFileData={this.resourceFileData}
                         scrollToView={this.state.selectedLink}
@@ -76,6 +76,9 @@ export class  NavigationBar extends React.Component<Props, State> {
                             <ul className="nav navbar-nav navbar-right">
                                 <li>
                                     <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.homeTag}</a>
+                                </li>
+                                <li>
+                                    <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.newsTag}</a>
                                 </li>
                                 <li>
                                     <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.aboutTag}</a>

@@ -5,6 +5,7 @@
 		"companyWelcomeTag":"Your security partner.",
 		"navbar":{
 			"homeTag": "Home",
+			"newsTag":"News",
 			"aboutTag": "About",
 			"solutionsTag": "Solutions",
 			"clientRegistrations":"Client registrations",
@@ -18,7 +19,11 @@
 				"buttonText":"Find Out More"
 			},
 			"activityHeader":"Find out our activities!",
+			"aboutUs":"About us",
 			"seOurVision":"See our vision",
+			"news":{
+				"newsHeader":"See what's happening!"
+			},
 			"about":{
 				"aboutHeader":"We've got what you need!",
 				"about_para_1":"We constantly scale our IT services and solutions against global quality standards. Our innovative solutions are designed for both commercial and business enterprises as well as small and medium-sized businesses. IBINTS PVT LTD is the leading security system installation company with the dedicated rich experienced employees to provide end to end Infrastructure Products, solutions and Services. IBINTS was born out of a commitment to quality services and a long term vision based on continuous customer care, innovation and transparency.  we at iBints recreate complex network solutions at competitive prices while conforming to all ethical standards.",
@@ -63,141 +68,530 @@
 				"item1":{
 					"name":"CCTV systems",
 					"content":{
-
+						"para1": {
+							"content": "iBints provide the most up-to-date & cost effective security solutions for all your CCTV needs, with variety of cameras & accessories from the leading manufacturers. Our products are designed to meet the high level of quality standards, reliability & safety features. From the very simple surveillance task to large integrated solutions.",
+							"image": "../img/sample.png"
+						},
+						"para2": {
+							"content":"We are providing wide range of cameras such as Dome camera, Box camera, PTZ Camera, Bullet camera, covert camera, Discreet camera, Day/night camera, Varifocal camera, Infrared/night vision, WDR Camera, Thermal camera, Network/IP Camera, Wireless IP Camera, High-definition camera etc. along with supply of monitor, control keypad, Digital video recorder hard disk and all other accessories."							
+						},
+						"para3": {
+							"content":"Our goal is to become the leading provider of innovative security products across the world together with our reliable business partners in each of our targeted sectors. Our advanced surveillance systems are used in the most demanding and challenging facilities to operate the surveillance system continuously as required to monitor and safe guard premise 24X7. Our CCTV surveillance systems are based on the advanced digital technology utilizes digital video recording for long periods of time with variety of quality and performance options and extra features such as email alerts & motion detection etc."							
+						},
+						"para4": {
+							"content":"iBints offers everything you need to create a complete video surveillance system."							
+						}
 					}
 				},
 				"item2":{
 					"name":"ANPR camera",
 					"content":{
-
+						"para1": {		
+							"image":"../img/sample.png"
+						},
+						"para2": {
+							"content":"iBints offer a wide range of Automatic Number Plate Recognition (ANPR), License Plate Recognition (LPR) solutions & our specialized products/services caters to wide range of applications which include - Airports, motor highways, tolling, Hotels, Shopping Malls, IT Parks Hospitals, Parking lots, Theme Parks, Commercial & Residential parking lots, VIP car parks, Government Office Buildings, Embassy Parking lots, Defense & Military check points/Parking lots, Factory entry / exit gates, Sea Port vehicle access check points etc."							
+						}
 					}
 				},
 				"item3":{
 					"name":"Access control system",
 					"content":{
-						
+						"para1": {
+							"content":"iBints offers highly secured “access control system” for your building which is easy to install and maintenance free. Our Access control system determines who, where and when is allowed to enter or exit.",
+							"image":"../img/sample.png"
+						},
+						"para2": {		
+							"content":"The safety and security of your employees and allowing authorized visitors to the facility is critical from the security point of view. Our Access control system allows you to control who can enter your facility or certain areas of your building. These door security systems allow administrators to track their employees'/authorized visitor’s activities and help monitor the overall safety of their premise."
+						},
+						"para3": {		
+							"content":"iBints offers a wide range of access control systems including both standalone and networked access control system for Business Towers, residential & commercial towers, hotels, hospitals, IT parks, factories, colleges, laboratories and other important facilities to create safe and secure work environment. Using the fingerprint, RFID tags, facial detection devices and access control panel, it prevents unauthorized access."
+							
+						},
+						"para4": {		
+							"content":"Our access control system is capable of well defining the access levels precisely; they have been designed to restrict the access of unauthorized persons from entering the premise or a restricted zone. Our access control system has a wide range of elevator control applications to operate the elevators in prestigious buildings/business Towers etc. to allow the access to the specified access levels/floors."
+							
+						},
+						"para5": {	
+							"content":"We are always able to upgrade existing solutions progressively as systems and products are developed."
+							
+						},
+						"para6": {		
+							"heading":"Long Range RFID System",
+							"content":"iBints offers a wide range of products for various applications which includes Long range, short range, Active and Passive variants.",
+							"image":"../img/sample.png"
+							
+						},
+						"para7": {
+							"content":"RFID system hold a reader, antenna and a minuscule tag which is widely used to regulate parking large, medium & small parking lots & allows seem less movement of authorized vehicles. The major benefit of the system is to allow rapid passage of the authorized vehicles which helps to handle higher volume of vehicle during peak traffic hours."
+							
+						},
+						"para8": {	
+							"content":"Besides parking applications, Our RFID systems are used for various customized applications such as - tolling, railway, handling municipal garbage trucks, trolley management in Airports, IT Parks, instant people passage, Sea Ports & Terminal management's solutions for handling cargo trucks etc."
+							
+						}
 					}
 				},
 				"item4":{
 					"name":"Biometric time attendance system",
 					"content":{
-						
+						"para1": {	
+							"content":"iBint provides Time Attendance Terminals solutions for small, medium and large organization to meet their attendance needs. Time attendance terminals increase productivity by reducing employee lateness, unauthorized long breaks and early departures iBints Attendance terminal series deals with the above issues by automating your data collection and facilitating instant and periodic reports. The stylish terminals are easy to install, simple to operate, and can be customized and upgraded to your exact requirements. Our in-house team supports clients and provide end to end services like installation, integration, customization.",
+							"image":"../img/sample.png"
+						},
+						"para2": {	
+							"content":"• It works without the computer."
+						},
+						"para3": {		
+							"content":"• Complete setup and programming can be done via keypads."
+						},
+						"para4": {		
+							"content":"• Eliminates buddy-punching and time-cards."
+						},
+						"para5": {		
+							"content":"• Eliminates early punch-ins."
+						},
+						"para6": {		
+							"content":"• Eliminates unauthorized overtime."
+						},
+						"para7": {		
+							"content":"• Accurately reports employee time/attendance to Payroll & HR."
+						},
+						"para8": {		
+							"content":"• Gives you full employee attendance control."
+						},
+						"para9": {		
+							"content":"• Audio-Visual indications for acceptance & rejection of valid and invalid fingerprints."
+						},
+						"para10": {		
+							"content":"• Audio-Visual indications for acceptance & rejection of valid and invalid fingerprints."
+						},
+						"para11": {		
+							"content":"• The 3 inch TFT can display more information vividly, including fingerprint image quality and verification result etc."
+						},
+						"para12": {		
+							"content":"• Suitable for office, factory, hotel, hospital, bank, shops Saves money over card-based systems."
+						},
+						"para13": {		
+							"content":"• Provides the most accurate time and attendance solution."
+						},
+						"para14": {		
+							"content":"• Fast and easy to use & easy Fetching Attendance Data. (USB Flash Drive)"
+						}	
 					}
 				},
 				"item5":{
 					"name":"Video & audio door phone",
 					"content":{
-						
+						"para1": {		
+							"content":"Audio Video Door System is fast becoming rigueur in residential complexes, office buildings, bungalows and villas. Technological advances in multimedia and embedded systems in general such as camera sensor technology and real time video encoding & decoding technologies, have made it commercially viable for current day security solutions to incorporate video and become a true multimedia solution."
+						},
+						"para2": {		
+							"content":"Audio video door entry system consists of both outside and indoor elements, an outdoor panel on the outside and indoor monitor, knowing every details of someone from the outside."
+						}
 					}
 				},
 				"item6":{
 					"name":"Security alarm system - Burglar & Intruder",
 					"content":{
-						
+						"para1": {		
+							"content":"A security alarm is a system designed to detect intrusion – unauthorized entry – into a building or area. Security alarms are used in residential, commercial, industrial, and military properties gold & jewellery shops, banks & money exchanges; or any premises requiring a security solution for protection against burglary (theft) or property damage, as well as personal protection against intruders. Car alarms likewise protect vehicles and their contents. Prisons also use security systems for control of inmates.",
+							"image":"../img/sample.png"
+						},
+						"para2": {	
+							"content":"Some alarm systems serve a single purpose of burglary protection; combination systems provide both fire and intrusion protection. Intrusion alarm systems may also be combined with closed-circuit television surveillance (CCTV) systems to automatically record the activities of intruders, and may interface to access control systems for electrically locked doors. Systems range from small, self-contained noisemakers, to complicated, multi-area systems with computer monitoring and control. It may even include two-way voice which allows communication between the panel and Monitoring station. We are offers different method of protection system that mentioned below."
+						},
+						"para3": {		
+							"heading":"Door protection",
+							"content":"In residences, the majority of break-ins occur through the front or back door. Magnetic contacts, as part of a perimeter detection system, provide the first line of defence in an intrusion attempt. With magnetic contacts installed, a protected door or window that is forced open can sound the alarm while the intruder still is outside a home or business. With the intruder outside, family and employee security is enhanced by reducing the risk of confrontation and the loss of possessions."
+						},
+						"para4": {	
+							"content":"When evaluating security products, residential users typically are more concerned with appearance than commercial users. Commercial considerations include specific issues such as how to protect valuables in storefront windows or display cases, how to protect steel doors and windows, and how to protect trucks at loading docks. Magnetic contacts are particularly suited for use on a 24-hour loop to protect occupied areas."
+						},
+						"para5": {		
+							"content":"Business should protect doors, windows, roof hatches, skylights, roll-up doors, and gates. Other areas that may warrant protection include vaults/safes, walk-in freezers, storage rooms, cabinets, entrances to sensitive departments (human resources, information systems, and executive)."
+						},
+						"para6": {		
+							"heading":"Glass break detection",
+							"content":"For businesses and homes, glass areas are extremely vulnerable since they are an easy way to gain entry to the premises. Smashing a pane of glass not only means easy entry, but provides a large enough opening through which valuable property may be removed."
+						},
+						"para7": {		
+							"content":"The best way to keep an intruder out of a building is to have the alarm sound before he gets inside. Security systems designed to signal an alarm at the start of a break-in also help reduce property damage and confrontation by helping to frighten the intruder away."
+						},
+						"para8": {		
+							"content":"Homes should protect the most vulnerable windows such as sliding glass doors, side windows next to the front door, and windows not facing the street. Motion sensors could be replaced with glass break sensors in a home where large pets roam when the security system is armed."
+						},
+						"para9": {	
+							"content":"Businesses should protect vulnerable windows such as glass doors, side windows next to the main entrance, and windows facing back alleys. In businesses where staff or crews are present after regular hours, motion sensors could be replaced with glass break sensors so the building can be secured while people move freely inside."
+						},
+						"para10": {		
+							"heading":"Motion detection",
+							"content":"Perimeter detection with glass break sensors and magnetic contacts is the first line of defence against intrusion. Interior or space detection using motion sensors provides the second line of defence. Motion sensors are used to detect intruder movement and will alarm as an intruder enters or passes through a protected area of a home or business."
+						},
+						"para11": {	
+							"content":"Motion sensors also are used to complement perimeter detection. With a motion sensor aimed at a door, an intruder will trip the perimeter device (magnetic contact or glass break sensor) as he breaks through the perimeter, and at the same time, the motion sensor will catch him."
+						},
+						"para12": {		
+							"content":"Unless there are magnetic contacts on every door and every window that opens, and glass break sensors protecting every window and glass door, it is possible an intruder will enter a home or business without activating a perimeter sensor. Homes should have at least one motion sensor, mounted with protection area covering high traffic areas and covering a foot of stairway so the alarm can sound before an intruder gets upstairs."
+						}
 					}
 				},
 				"item7":{
 					"name":"Fire alarm system",
 					"content":{
-						
+						"para1": {	
+							"content":"A fire alarm system has a number of devices working together to detect and warn people through visual and audio appliances when smoke, fire, carbon monoxide or other emergencies are present. These alarms may be activated automatically from smoke detectors, and heat detectors or may also be activated via manual fire alarm activation devices such as manual call points or pull stations."
+						},
+						"para2": {		
+							"content":"Alarms can be either motorized bells or wall mountable sounders or horns. They can also be speaker strobes which sound an alarm, followed by a voice evacuation message which warns people inside the building not to use the elevators.. Fire alarm warning devices can also be set to different volume levels. Smaller buildings may have the alarm set to a lower volume and larger buildings may have alarms set to a higher level .iBints provides all the fire alarm system solutions."
+						}
 					}
 				},
 				"item8":{
 					"name":"Telephone PABX",
-					"content":{
-						
+					"content":{						
+						"para1": {	
+							"content":"Being one of the leading PABX Installation company in Kerala, we at iBints understand the need for high quality and transparent communication. The various business processes can only run smoothly when there is efficient communication between stakeholders, personnel, departments and offices. Our chief aim is to work closely with companies, ascertain their exact needs and to implement the kind of PABX system that takes complete care of all communication needs at present. What’s more, our systems are open to expansion and addition later as the company grows. We add a lot of value to businesses and enhance communication with our high class products that perform at optimum levels across a range of different conditions."
+						},
+						"para2": {		
+							"content":"No matter how big or small your business is or how many people are under your firm, ibints provide solution for all your telecommunication needs. The brands we use are all hailed and respected as the most reputed brands which manufacture premium quality PABX equipment. We do not stock products from only one brand but a range of reputed brands and offer PABX and PBX intercom solutions."
+						}
 					}
 				},
 				"item9":{
 					"name":"Q-management system",
 					"content":{
-						
+						"para1": {	
+							"content":"iBints provide electronic queuing systems dramatically improve linear queuing by increasing service efficiency, decreasing average wait times, and adding advertising and promotional opportunities right into the queue."
+						},
+						"para2": {		
+							"content":"Queue congestion can lead to low customer satisfaction, longer waiting periods, poor brand image and walk-offs. Ultimately this affects customer loyalty issues. Yet, hiring additional employees is not the answer, as this may reduce productivity, lead to staff idleness and reduce profitability."
+						},
+						"para3": {		
+							"content":"The complete solution for this has queuing management system. The system is designed not only as a tool to solve queue congestion. The system allows for faster organization of queuing and customer service with its non-linear system. Customers no longer have to stand in a line waiting for their turn to be served, as they can sit comfortably in the waiting area without having to worry about missing their turn. Also offers competitive benefits to all parties involved in the queue management system: customers, front office staff, back office staff, management relevant executives and company."
+						}
 					}
 				},
 				"item10":{
 					"name":"Automatic gate & barrier",
 					"content":{
-						
+						"para1": {	
+								"content":"ibints provides a wide range of gate automation kits which are economically priced for swing & sliding gate applications. We do have both residential & industrial grade heavy duty automation kits for various sizes & capacity of gates/doors."
+						},
+						"para2": {		
+							"content":"We are also specialized in heavy duty boom gates for parking applications which are suitable for intensive usage for residential & commercial applications. Our boom barriers and gate motors can be easily integrated with third party access control solutions - such as RF control, RFID or simple access control solutions."
+						},
+						"para3": {		
+							"content":"iBints also specialized in high speed parking barriers which are of 100% duty cycle for high traffic applications which includes toll plazas, Airports, Border check posts & busy parking lots etc"
+						}
 					}
 				},
 				"item11":{
 					"name":"Turnstile gate/flap/swing barrier",
 					"content":{
-						
+						"para1": {	
+							"content":"Turnstiles & Tripods are widely used in factories, buildings, amusement parks, stadiums etc to restrict & control the unauthorized access."
+						},
+						"para2": {		
+							"content":"iBints turnstiles can be also integrated with access control for various applications & we also do offer customized solutions with accessing the facility with ticket & ticket exit systems for a wide range of applications such as scenic, sports facilities, stadiums, and other commercial arenas, tourist destinations, hand key management systems of construction sites etc."
+						},
+						"para3": {		
+							"content":"iBints offer both half height & full height turnstiles with can be used for bi-directional or uni-directional operations which security allows one person to pass at a time."
+						},
+						"para4": {	
+								"content":"Flap barriers can be installed in all building conditions and are capable of providing a complete access management solution for the control entry & exit passages of the buildings. Besides, we do provide complete integrated access solutions to control these flap barriers with customized visitors & members management software which can be centrally controlled & monitored or standalone type."
+						},
+						"para5": {		
+							"content":"Some of the key features and functions include,"
+						},
+						"para6": {		
+							"content":"• Fault detection and alarm functions, easy to use and maintenance."
+						},
+						"para7": {	
+							"content":"• The running status can be programmed and controlled with the built-in keyboard on the main board."
+						},
+						"para8": {		
+							"content":"• Mechanical anti-pinch function. If the gate meets resistance in the reset process, motors will stop working automatically within the prescribed time and reset again after the default delay (till fully reset)."
+						},
+						"para9": {		
+							"content":"• Anti-breakthrough function. The gate is locked automatically until opening signal received."
+						},
+						"para10": {		
+							"content":"• Synchronization functions (for dual gate equipments)."
+						}						
 					}
 				},
 				"item12":{
 					"name":"POS system(point of sale), Barcode reader",
 					"content":{
-						
+						"para1": {	
+							"content":"Point Of Sale (POS) software, also known as electronic Point of Sale (ePOS), is an essential application for retail or hospitality businesses, because it manages checkout operations and is what the customer sees when they make a transaction."
+						},
+						"para2": {		
+							"content":"Some of the key features and functions include,"
+						},
+						"para3": {		
+							"content":"• Point of Sale (POS) Software is designed with a eye-catching graphical user interface, Users can learn easily with minimal training period, no prior computer skills required."
+						},
+						"para4": {	
+							"content":"• Barcode Compatibility dramatically reduces clerical errors and check-out times. Retailers can directly print their own professional looking barcode with company name, barcode, item name, price. Etc. from POS the software"
+						},
+						"para5": {		
+							"content":"• Inventory Management is an essential part of a retail business. By using POS Software, It will automatically update your inventory every time you make a sale."
+						},
+						"para6": {		
+							"content":"• Retailer can easily generate comprehensive reports to analyze the business statistics. Product wise, Category wise, periodical, sales man wise, Fast moving & Slow moving Reports etc."
+						}
 					}
 				},
 				"item13":{
 					"name":"Antitheft system",
 					"content":{
-						
+						"para1": {	
+							"content":"An anti-theft antenna is a system where any device or method used to prevent or deter the unauthorized appropriation of items considered valuable. today concerns of security will be a major issue and Theft is one of the most common and oldest criminal behaviors from so many years. From the invention of the first lock and key to the introduction of RFID tags and biometric identification, anti-theft systems have evolved to match the introduction of new inventions to society and the resulting theft of them by others."
+						},
+						"para2": {		
+							"content":"We at IBINTS offer our clients an excellent quality range of antitheft system, which are manufactured from high grade quality materials. These antitheft system and Antennas can be customized as per our precious customer's specifications."
+						},
+						"para3": {		
+							"content":"We at IBINTS also offer our different range of Electronic Anti-Theft Systems services to clients and have been proven to protect the merchandise from the shoplifters. Small security tags, applied to high-theft merchandise, it alerts to the retailers when somebody tries to take the merchandise without being billed from the store. Reducing shoplifting losses, increasing profitability, increasing sales when items are taken from locked cases behind counters and put on live sales floor. Therefore, creating a more pleasant shopping environment for your customers with utmost security and protection from any theft with proper and reliable security measures."
+						}
 					}
 				},
 				"item14":{
-					"name":"GPS & GPRS vehivle tracking system",
+					"name":"GPS & GPRS vehicle tracking system",
 					"content":{
-						
+						"para1": {	
+							"content":"Vehicle Tracking System is used to control, monitor and manage activities of fleets. Web based solution gives real time visibility to its managers around clock, acting as an anti-thefting agent. Vehicle tracking software provides details like geographic location, speed, driver performance, fuel level, idle time and more to enhance fleet maintenance. Intelligent technology combines relevant data and sends them to centralized web server. Business authorities can view & access information on personal computers, hand held devices whenever they are in need of. Adoption of automated system lowers overall maintenance cost associated with automobiles of your industry."
+						},
+						"para2": {		
+							"content":"Real time monitoring activated by GPS Vehicle tracking system allows you to do efficient planning and scheduling of operations. 24/7 security to assets prevails, thereby preventing from illegal activities. Remote tracking operations grant full control to concerned supervisors such that assigning of trips becomes easier. Reporting functionality provides up to date records on operational performance like distance travelled, duration of idling, driver behavior etc. allowing to take decisive actions could be derived. Implementation of this affordable option greatly minimizes operational cost spent by your organization."
+						}
 					}
 				},
 				"item15":{
 					"name":"Motion sensor installation",
 					"content":{
-						
+						"para1": {	
+							"content":"A motion detector is a device that detects moving objects, particularly people. Such a device is often integrated as a component of a system that automatically performs a task or alerts a user of motion in an area. They form a vital component of security, automated lighting control, home control, energy efficiency, and other useful systems .iBints provide the wide range of motion sensor as per your needs."
+						},
+						"para2": {		
+							"content":"iMotion detectors have found wide use in domestic and commercial applications. One common application is activating automatic door openers in businesses and public buildings. Motion sensors are also widely used in lieu of a true occupancy sensor in activating street lights or indoor lights in walkways, such as lobbies and staircases. In such smart lighting systems, energy is conserved by only powering the lights for the duration of a timer, after which the person has presumably left the area. A motion detector may be among the sensors of a burglar alarm that is used to alert the home owner or security service when it detects the motion of a possible intruder. Such a detector may also trigger a security camera to record the possible intrusion."
+						}
 					}
 				},
 				"item16":{
 					"name":"Metal detector & scanner",
 					"content":{
-						
+						"para1": {		
+							"content":"iBints provide walk-through and hand-held metal detector &scanners that are used to safeguard facilities. such as airports, prisons and embassies, and special events, such as athletic competitions, political conventions, concerts, and high-profile ceremonies and places with moderate traffic like hospitals, government facilities, banks, entertainment facilities (malls, bars, discos, restaurants)."
+						},
+						"para2": {		
+							"content":"Walk-through metal detectors main features include,"
+						},
+						"para3": {		
+							"content":"• A dual access non-resettable code to safeguards calibration settings and an audible alarm to reveal any unauthorized access attempts."
+						},
+						"para4": {		
+							"content":"• A built-in overhead electronics compartment to eliminate the inconveniences of a cable-connected console."
+						},
+						"para5": {		
+							"content":"• Multi-phase frequencies and variable tone settings to facilitate multi-unit operation."
+						},
+						"para6": {		
+							"content":"• Modular electronics and unit design for easy on-site assembly and maintenance."
+						},
+						"para7": {		
+							"content":"Hand-held metal detector features include,"
+						},
+						"para8": {		
+							"content":"• Low false alarm rate."
+						},
+						"para9": {		
+							"content":"• Low power consumption."
+						},
+						"para10": {		
+							"content":"• Easy to operate."
+						},
+						"para11": {		
+							"content":"• High sensitivity."
+						},
+						"para12": {		
+							"content":"• Detect all metal including non-magnetic stain less steel."
+						},
+						"para13": {		
+							"content":"• Silent vibration with light indication"
+						}
 					}
 				},
 				"item17":{
 					"name":"X-ray baggage scanner",
 					"content":{
-						
+						"para1": {		
+							"content":"X ray baggage scanner consisting of a conveyor and screen which is able to detect a range of sophisticated threats in the baggage of passengers. Usually, the x ray baggage scanner is used in the airport and railway station. Also, at underground station, we can also see the security inspection equipment. It really has a lot of advantages. For example, it can preciously detect the potential dangers like explosives, restricted knives or things and many other objects which are likely harmful to people."
+						},
+						"para2": {		
+							"content":"Certainly, in addition to good precision, x ray baggage scanner also has stable working performance. X ray baggage scanner can display horizontal and vertical images by two independent generators, and can quickly detect organic, inorganic, mixtures or light metals according to the effective atomic number of detected objects. iBints provide x-ray baggage scanner solutions as per our customer needs and requirements."
+						}
 					}
 				},
 				"item18":{
 					"name":"Under vehicle scanner",
 					"content":{
-						
+						"para1": {		
+							"content":"With today's growing security needs & challenges involved in controlling the public parking's is one of the major concerns for the property owners. As the number of vehicle entering & existing on a daily basis especially in the public meeting places like - Airports, Malls, Hotels, Public parking's, Hospitals, etc. calls for more efficient & secured under the vehicle scanning system to protect the interest of both property owners & its valued customers."
+						},
+						"para2": {		
+							"content":"No doubt, in current global scenario vehicle inspection is very critical & tedious job. Especially inspecting the vehicle's underside is a difficult job by using the conventional systems hence security of the property remains open for major risks. It's been often learnt that the potentially dangerous objects are hidden underneath the vehicle without knowledge of occupants/driver. Letting such vehicles without screening them to the parking lots can create serious consequences & damage to the property & to the lives of the people."
+						},
+						"para3": {		
+							"content":"In view of the growing security needs, IBINTS brings you the most advanced under vehicle scanning system (UVSS system). Our UVSS system can be installed both on the existing & new properties without much modifications of the existing infrastructure. We do have a range of under vehicle scanning system solutions which can be installed on the surfaces of the road & also we have the recess mount models. In order to provide the high security our UVSS systems also offers integrated with third party access control technologies such as RFID, ANPR solutions to tag the vehicles with its number plate with the respective vehicle chassis for the access verifications."
+						}
 					}
 				},
 				"item19":{
 					"name":"Parking management/guidance/counting system",
 					"content":{
-						
+						"para1": {		
+							"heading":"Parking management system",
+							"content":"At ibints we use cutting edge technology to provide hassle free and effective parking management solutions. Our Parking Management Services are designed to showcase a new conception in resolving your parking problems."
+						},
+						"para2": {	
+							"content":"iBints has been catering to various requirements of good parking management system. Our products are based on the studies conducted to make the parking lots convenient to use and safe. We provide a variety of parking management applications including the prevention of unauthorized parking and the enforcement of parking time limits."
+						},
+						"para3": {		
+							"content":"iBints car parking management system also carries Car Parking counting display, Valet parking solutions which can be manual or automatic pay stations & Ticket validating machines. The Best in class parking control systems that ibints offers are assured with increased accuracy & affordable technology. We provide a complete parking management solution for sites with multiple parking difficulties"
+						},
+						"para4": {		
+							"content":"We are delighted to offer our flexible Parking Control solutions and services, to know more kindly approach ibints."
+						},
+						"para5": {		
+							"heading":"Parking guidance system",
+							"content":"iBints has a core foundation to deliver innovative parking guidance systems. Each system that we design and deliver is capable enough to handle the parking challenges to the best satisfaction of our esteemed customers."
+						},
+						"para6": {		
+							"content":"Our Parking Guidance systems are equipped with adequately spaced out LED’s improvising end user convenience through oriented visual guidance. We supply and setup comprehensive parking guidance systems for car parks, corporate parks, malls and we tailor the system design to meet your each and every requirement."
+						},
+						"para7": {		
+							"heading":"Parking counting system",
+							"content":"Parking counting system is more effective and its dependent on the accuracy of the data input. It is a suitable technology that works according to site conditions, traffic behavior and other environmental factors. It is a centralized parking management system that enables authorities to take better care of their parking. By means of this modern technology, authorities are informed about the exact number of vehicles that are kept in the parking areas. They are more assured about the presence of large number of cars and two-wheelers and can maintain properly. It is quite an efficient technology that uses loop detectors to detect the presence of the vehicles in the entire parking area."
+						},
+						"para8": {	
+							"content":"Also provides a wide range of parking counting display systems duly customized to each project requirements which can display the No. of available slots in addition to OPEN/FULL messages."
+						}
 					}
 				},
 				"item20":{
 					"name":"Audio visual system",
-					"content":{
-						
+					"content":{						
+						"para1": {	
+							"content":"We at iBints offers the latest equipment in Audio, Visuals, Simultaneous Interpretation, Projection, Lights, Sound, Public Address, Digital Signage Solution, Video Conference, We realize that you only have one chance to make a great presentation. We offer reliable and creative solutions backed with the latest technology & excellent customer service."
+						},						
+						"para2": {	
+							"content":"Our professionals will design the right audio video solution for your next venue delivering crystal clear sound to all ends of the room with intelligent, state of the art lighting systems to enhance your meeting."
+						},
+						"para3": {		
+							"heading":"Audio-visual",
+							"content":"The extensive range of branded products is constantly updated, to reflect the latest developments in multimedia projectors, flat screen displays, interactive presentation technology, furniture and meeting room equipment – offering reliability, high quality and exceptional value for money."
+						},
+						"para4": {		
+							"heading":"Video conference system",
+							"content":"In partnership with the leading manufacturers, we provide impartial advice, design and installation services for world-class videoconferencing systems. This includes portable, desktop, ‘roll-about’ and self-contained units, bespoke integrated solutions for permanent installation and the integration of videoconferencing into existing AV systems."
+						},
+						"para5": {		
+							"heading":"Public address system",
+							"content":"We at iBints provides Public Address System (PA system), is an electronic sound amplification and distribution system with a microphone, amplifier and loudspeakers, used to allow a person to address a large public, for example for announcements of movements at large and noisy air and terminals, warehouse, factory etc."
+						}
 					}
 				},
 				"item21":{
 					"name":"Structured cabling solution",
 					"content":{
-						
+						"para1": {		
+							"content":"Cabling infrastructure is the backbone for all your IT networking requirements and is also needed to run telephony systems, security and many other IP functions, so the correct choice is paramount."
+						},
+						"para2": {		
+							"content":"The pace of which technology develops is moving ever faster. As processors get quicker and more information needs to be transmitted, your network needs the capability of the latest development in structured cabling."
+						},
+						"para3": {		
+							"content":"We fully understand that your business is unique, we will work with you to identify your current and future requirements. Our team of engineers ensure that our customers are best satisfied."
+						},
+						"para4": {		
+							"content":"So whether you are looking for a Cat5e, Cat6, or Cat6a structured cabling system, or in single-mode or multi-mode fiber optic system, we have the solution."
+						}
 					}
 				},
 				"item22":{
 					"name":"Other services",
 					"content":{
-						
-					}
-				},
-				"item19":{
-					"name":"Parking management/guidance/counting system",
-					"content":{
-						
+						"para1": {		
+							"content":"• Computer hardware, software and networking solutions."
+						},
+						"para2": {		
+							"content":"• Web development."
+						},
+						"para3": {		
+							"content":"• Wireless solutions."
+						},
+						"para4": {		
+							"content":"• Optical fiber solutions."
+						},
+						"para5": {		
+							"content":"• Installation of bollards and lighting."
+						},
+						"para6": {		
+							"content":"• Solar system."
+						},
+						"para7": {		
+							"content":"• Inverter and UPS solutions."
+						},
+						"para8": {		
+							"content":"• Photostat and printer machine solutions."
+						},
+						"para9": {		
+							"content":"• Currency counting machine with fake notes detector."
+						},
+						"para10": {		
+							"content":"• ID Printer."
+						},
+						"para11": {		
+							"content":"• BMS (Building management system)."
+						},
+						"para12": {		
+							"content":"• MEP (Mechanical, Electrical and Plumping)."
+						},
+						"para13": {		
+							"content":"• HVAC (Heating, Ventilation and Air Conditioning)."
+						}
 					}
 				}
+			}
+		},
+		"newsSection":{
+			"news1":{
+				"caption":"Portfolio",
+				"content":{
+					"para1":"iBints is sponsering one lakh worthy portfolio for the best model who is contesting at the impulse 2k17 fest (25-03-2017) conducted by muslim association college of engineering venjaramood at RDR auditorium edapazhanji trivandrum. Best wishes for all the team."
+				},
+				"image":"../img/sample.png",
+				"date":"12/11/2017"
+			},
+			"news2":{
+				"caption":"Campaign for security awareness ",
+				"content":{
+					"para1":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month.",
+					"para2":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month."
+				},
+				"image":"../img/sample.png",
+				"date":"11/11/2017"
+			},
+			"news3":{
+				"caption":"Upcoming offers",
+				"content":{
+					"para1":"iBints Independence Day and Onam special offer will start from August 10 up to September 15. Please contact us for further details. +919567050008,+917592915008 Share your security needs. Make your properties and environments are secure."
+				},
+				"image":"../img/sample.png",
+				"date":"10/11/2017"
 			}
 		}
 	}
