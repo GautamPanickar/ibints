@@ -1,0 +1,29 @@
+{
+	"newsSection":{
+		"news1":{
+			"caption":"Portfolio",
+			"content":{
+				"para1":"iBints is sponsering one lakh worthy portfolio for the best model who is contesting at the impulse 2k17 fest (25-03-2017) conducted by muslim association college of engineering venjaramood at RDR auditorium edapazhanji trivandrum. Best wishes for all the team."
+			},
+			"image":"../img/sample.png",
+			"date":"12/11/2017"
+		},
+		"news2":{
+			"caption":"Campaign for security awareness ",
+			"content":{
+				"para1":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month.",
+				"para2":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month."
+			},
+			"image":"../img/sample.png",
+			"date":"11/11/2017"
+		},
+		"news3":{
+			"caption":"Upcoming offers",
+			"content":{
+				"para1":"iBints Independence Day and Onam special offer will start from August 10 up to September 15. Please contact us for further details. +919567050008,+917592915008 Share your security needs. Make your properties and environments are secure."
+			},
+			"image":"../img/sample.png",
+			"date":"10/11/2017"
+		}
+	}
+}

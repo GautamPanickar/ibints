@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import solutionsStore = require('../stores/solutionsstore');
+import HTMLUtilities = require('../utilities/htmlutilities');
 
 interface Props{
 	resourceFileData?: any;
@@ -49,7 +50,7 @@ class SolutionsContent extends React.Component<Props, null> {
 			for (let content of selectedContent) {	
 				if (content.heading) {
 					let heading = (
-									<div className="col-md-12">
+									<div key={HTMLUtilities.UID} className="col-md-12">
 										<h3>{content.heading}</h3>
 									 </div>									  	
 									);
@@ -57,12 +58,12 @@ class SolutionsContent extends React.Component<Props, null> {
 				}			
 				if (content.content){
 					let paragraph = (
-										<p className='col-md-12'>{content.content}</p>									  	
+										<p key={HTMLUtilities.UID} className='col-md-12'>{content.content}</p>									  	
 									);
 					displayContent.push(paragraph);
 				}
 				if (content.image){
-					let image = (	<div className="col-md-6">
+					let image = (	<div key={HTMLUtilities.UID} className="col-md-6">
 										<img className="img-responsive" src={content.image}></img>
 									 </div>
 									);

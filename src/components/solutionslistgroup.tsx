@@ -1,6 +1,7 @@
 import * as React from 'react';
 import SolutionsListItem = require('../components/solutionslistitem');
 import solutionsStore = require('../stores/solutionsstore');
+import HTMLUtilities = require('../utilities/htmlutilities');
 
 interface Props {
 	resourceFileData?: any;
@@ -31,6 +32,7 @@ class SolutionsListGroup extends React.Component<Props, null> {
 		for(let data of dataArray) {
 			index++;
 			listItems.push(<SolutionsListItem
+						key={HTMLUtilities.UID}
 						id={index}
 						text={data.name}
 						isActive={selectedIndex === 0 ? selectedIndex === index - 1:

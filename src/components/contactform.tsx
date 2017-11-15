@@ -6,11 +6,7 @@ interface Props{
 	resourceFileData?: any;
 }
 
-interface State {
-
-}
-
-class ContactForm extends React.Component<Props, State> {
+class ContactForm extends React.Component<Props, null> {
 	constructor(props: Props) {
 		super(props);
 	}
@@ -63,7 +59,8 @@ class ContactForm extends React.Component<Props, State> {
 			                    	rows={5}
 			                    	columns={10}
 			                    />
-			                    <button id='sendMessageButton' className="btn btn-default-dark">Send Message</button>
+			                    <button id='sendMessageButton' className="btn btn-default-dark" onClick={this.onSendMessageButtonClick}>
+			                    Send Message</button>
 			                </form>
 		            	</div>
 		            	{contactDetailsModal}		            
@@ -71,6 +68,10 @@ class ContactForm extends React.Component<Props, State> {
 	    		</div>
 	    	</section>
 		);
+	}
+
+	private onSendMessageButtonClick = ():void =>{
+		// Do nothing
 	}
 }
 

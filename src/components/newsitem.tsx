@@ -1,5 +1,7 @@
 import * as React from 'react';
 import newsType = require('../utilities/newsType');
+import HTMLUtilities = require('../utilities/htmlutilities');
+
 
 interface Props {
   news: newsType;
@@ -39,7 +41,7 @@ class NewsItem extends React.Component<Props, null> {
       let paragraphs: Array<JSX.Element> = new Array<JSX.Element>();
       if (content.length > 0) {
           for (let paragraph of content) {
-              paragraphs.push(<p>{paragraph}</p>);
+              paragraphs.push(<p key={HTMLUtilities.UID}>{paragraph}</p>);
           }
       }
       return paragraphs;

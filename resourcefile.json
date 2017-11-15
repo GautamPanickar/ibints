@@ -37,6 +37,14 @@
 				"vision_para_3":"Our mission is to build long-term relationships with our customers and clients and provide exceptional customer services by pursuing business through innovation and advanced technology."
 			}
 		},
+		"clientRegistrationsPage":{
+			"heading":"Meet our clients.",
+			"content": {
+				"para1":"iBints has announced the scheme 30-50 percentage of installation fee reduction up to three years after taking client registration card. Our registered clients would be getting our existing and upcoming offers/scheme.",
+				"para2":"All the registered clients may get the chance to get specific share of profit from iBints upcoming scheme.",
+				"para3":"NOTE: We are temporarily hiding our clients details."
+			}
+		},
 		"contactPage":{
 			"heading": "Send us a message.",
 			"contactDetails":"Contact Details",
@@ -566,33 +574,6 @@
 					}
 				}
 			}
-		},
-		"newsSection":{
-			"news1":{
-				"caption":"Portfolio",
-				"content":{
-					"para1":"iBints is sponsering one lakh worthy portfolio for the best model who is contesting at the impulse 2k17 fest (25-03-2017) conducted by muslim association college of engineering venjaramood at RDR auditorium edapazhanji trivandrum. Best wishes for all the team."
-				},
-				"image":"../img/sample.png",
-				"date":"12/11/2017"
-			},
-			"news2":{
-				"caption":"Campaign for security awareness ",
-				"content":{
-					"para1":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month.",
-					"para2":"We are planning a campaign to improve the awareness of people about security, at Trivandrum Central Stadium on 25th of this month."
-				},
-				"image":"../img/sample.png",
-				"date":"11/11/2017"
-			},
-			"news3":{
-				"caption":"Upcoming offers",
-				"content":{
-					"para1":"iBints Independence Day and Onam special offer will start from August 10 up to September 15. Please contact us for further details. +919567050008,+917592915008 Share your security needs. Make your properties and environments are secure."
-				},
-				"image":"../img/sample.png",
-				"date":"10/11/2017"
-			}
-		}
+		}		
 	}
 }

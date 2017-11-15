@@ -9,6 +9,8 @@ class ResourceFileStore extends EventEmitter {
 
 	// data variables
 	private resourceFileData:any = null;
+	private newsResourceFileData:any = null;
+	private registrationsResourceFileData:any = null;
 
 	// Events
 	private static RESOURCE_FILE_LOADED:string = 'ResourceFileLoaded';
@@ -28,6 +30,8 @@ class ResourceFileStore extends EventEmitter {
 				let loadAction = action as loadResourceFileAction;
 				if (loadAction.isResourceFileDataAvailable) {
 					this.resourceFileData = loadAction.resourceFileData;
+					this.newsResourceFileData = loadAction.newsFileData;
+					this.registrationsResourceFileData = loadAction.registrationsFileData;
 					this.emit(ResourceFileStore.RESOURCE_FILE_LOADED);
 				}
 				break;
@@ -37,6 +41,16 @@ class ResourceFileStore extends EventEmitter {
 	// Gets the data from the store
 	public get resourceFile(): any{
 		return this.resourceFileData;
+	}
+
+	// Gets the news data from the store
+	public get newsResourceFile(): any{
+		return this.newsResourceFileData;
+	}
+
+	// Gets the registrations data from the store
+	public get registrationsResourceFile(): any{
+		return this.registrationsResourceFileData;
 	}
 }
 
