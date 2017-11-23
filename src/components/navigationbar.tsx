@@ -5,6 +5,7 @@ import { Header } from  '../../src/components/header';
 import { Footer } from  '../../src/components/footer';
 import ContactForm = require( '../../src/components/contactform');
 import Solutions =  require('../../src/components/solutionscontainer');
+import ClientRegistrations =  require('../../src/components/clientregistrations');
 
 interface Props { 
 	name?:string;
@@ -13,18 +14,22 @@ interface Props {
 interface State {
     displayNavbar?:boolean;
     selectedLink?: string;
+    isCollapsed?: boolean;
 }
 
 export class  NavigationBar extends React.Component<Props, State> {
 
     private resourceFileData:any = null;
+    private newsResourceFileData:any = null;
+    private registrationsResourceFileData:any = null;
 
     /* The constructor is called even before the component is mounted */
     constructor(props: Props){
         super(props);
         this.state = {
             displayNavbar: false,
-            selectedLink: null
+            selectedLink: null,
+            isCollapsed: true
         }    
 
 
@@ -35,10 +40,12 @@ export class  NavigationBar extends React.Component<Props, State> {
 
     // The render method
     public render() {
-        let header = this.resourceFileData && (this.state.selectedLink === null || this.state.selectedLink === 'Home' ||
-                                                this.state.selectedLink === 'About' || this.state.selectedLink === 'News') ? 
+        let header = this.resourceFileData && this.newsResourceFileData && 
+                    (this.state.selectedLink === null || this.state.selectedLink === 'Home' ||
+                        this.state.selectedLink === 'About' || this.state.selectedLink === 'News') ? 
                     <Header 
                         resourceFileData={this.resourceFileData}
+                        newsResourceFileData={this.newsResourceFileData}
                         scrollToView={this.state.selectedLink}
                     /> : null;
         let contactPage = this.resourceFileData && this.state.selectedLink === 'Contact us' ? 
@@ -49,12 +56,19 @@ export class  NavigationBar extends React.Component<Props, State> {
                     <Solutions 
                         resourceFileData={this.resourceFileData}
                     /> : null;
+        let clientRegistrationsPage = this.resourceFileData && this.registrationsResourceFileData 
+                                        && this.state.selectedLink === 'Client registrations' ?
+                                        <ClientRegistrations
+                                            resourceFileData={this.resourceFileData}
+                                            registrationsResourceFileData={this.registrationsResourceFileData}
+                                        /> : null;
         return (
             <div>
                 {this.renderNavbar()}
                 {header}
                 {contactPage}
                 {solutionsPage}
+                {clientRegistrationsPage}
                 <Footer name="footer"/>
             </div>
         );
@@ -63,16 +77,21 @@ export class  NavigationBar extends React.Component<Props, State> {
     // Renders the navbar
     private renderNavbar(): JSX.Element {
         if (this.state.displayNavbar) {
+            let buttonClass = this.state.isCollapsed ? 'navbar-toggle collapsed': 'navbar-toggle';
+            let listClass =  this.state.isCollapsed ? 'navbar-collapse collapse' : 'navbar-collapse collapse in';
             return (
                 <nav id="mainNav" className="navbar navbar-default navbar-fixed-top">                
                     <div className="container-fluid">
                         <div className="navbar-header">
-                            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <button type="button" className={buttonClass} data-toggle="collapse" 
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded={!this.state.isCollapsed}
+                                onClick={this.onCollapsedNavbarSelection}>
                                 <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                             </button>
                             <a className="navbar-brand page-scroll">{this.resourceFileData.companyName}</a>
                         </div>
-                        <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div className={listClass} id="bs-example-navbar-collapse-1"
+                            aria-expanded={!this.state.isCollapsed}>
                             <ul className="nav navbar-nav navbar-right">
                                 <li>
                                     <a className="page-scroll" onClick={this.handleOnClick}>{this.resourceFileData.navbar.homeTag}</a>
@@ -120,6 +139,8 @@ export class  NavigationBar extends React.Component<Props, State> {
     //on loading the resource file
     private onResourceFileLoaded() {
         this.resourceFileData = ResourceFileStore.resourceFile["iBints"];
+        this.newsResourceFileData = ResourceFileStore.newsResourceFile["newsSection"];
+        this.registrationsResourceFileData = ResourceFileStore.registrationsResourceFile["registrations"];
         this.setState({
             displayNavbar: true
         });
@@ -131,6 +152,13 @@ export class  NavigationBar extends React.Component<Props, State> {
         let selectedLink: string = targetElement.textContent;
         this.setState({
             selectedLink: selectedLink
+        });
+    }
+
+    // on clicking the collapsed navbar button
+    private onCollapsedNavbarSelection =():void =>{
+        this.setState({
+            isCollapsed: false
         });
     }
 }

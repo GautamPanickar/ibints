@@ -8,6 +8,7 @@ import NewsContainer = require ('../../src/components/newscontainer');
 interface Props 
 { 
 	resourceFileData?: any;
+	newsResourceFileData?: any;
 	scrollToView?: string;
 }
 
@@ -17,6 +18,7 @@ export class Header extends React.Component<Props, null> {
 		super(props);
 		this.scrollToAbout = this.scrollToAbout.bind(this);
 		this.scrollToVision = this.scrollToVision.bind(this);
+		this.scrollToNews = this.scrollToNews.bind(this);
 		this.setScrollPosition = this.setScrollPosition.bind(this);
 	}
 
@@ -37,7 +39,9 @@ export class Header extends React.Component<Props, null> {
         let vision = this.props.resourceFileData ?
         			 <Vision resourceFileData={this.props.resourceFileData} ref={'vision'}/> : null;
         let news = this.props.resourceFileData ?
-        			<NewsContainer resourceFileData={this.props.resourceFileData} ref={'news'}/> : null;
+        			<NewsContainer resourceFileData={this.props.resourceFileData} 
+        				newsResourceFileData={this.props.newsResourceFileData}
+        				ref={'news'} onAboutClick={this.scrollToAbout}/> : null;
 		return (
 			<div id='headerElement'>
 				{this.renderHeader()}
@@ -52,23 +56,28 @@ export class Header extends React.Component<Props, null> {
 	// Renders the header
 	private renderHeader(): JSX.Element {
 		if (this.props.resourceFileData) {
+			let headerStyle:React.CSSProperties = {
+				    backgroundImage: 'url(img/header4.jpg)'
+			};
 			return (
-				<header id="home" ref={'home'}>				
-					<img id="headerBackGroundImage" src="img/header4.jpg"></img>	
-	                <div className="header-content">
-	                    <div className="header-content-inner">
-	                        <h1 id="homeHeading">
-	                        	{this.props.resourceFileData.companyName + '-' + this.props.resourceFileData.companyWelcomeTag}
-	                    	</h1>
-	                        <hr></hr>
-	                        <p>{this.props.resourceFileData.homePage.welcomeMessage.welcomeMessageContent_para_1}
-	                        {this.props.resourceFileData.homePage.welcomeMessage.welcomeMessageContent_para_2}</p>
-	                        <button className="btn btn-primary btn-xl page-scroll" onClick={this.scrollToNews}>
-	                        	{this.props.resourceFileData.homePage.welcomeMessage.buttonText}
-	                        </button>
-	                    </div>
-	                </div>
-	            </header> 
+				<section id="home" className='skip-session-padding' ref={'home'} style={headerStyle}>
+		            <div className="container">		            	
+		                <div className="header-content"> 
+		                    <div className="header-content-inner center-alignment">		                    	
+		                        <h1>
+		                            {this.props.resourceFileData.companyName + '-' + this.props.resourceFileData.companyWelcomeTag}
+		                        </h1>
+		                        <hr className="primary"></hr>
+		                        <br></br>
+		                        <p>{this.props.resourceFileData.homePage.welcomeMessage.welcomeMessageContent_para_1}
+		                        {this.props.resourceFileData.homePage.welcomeMessage.welcomeMessageContent_para_2}</p>
+		                        <button className="btn btn-primary btn-xl page-scroll" onClick={this.scrollToNews}>
+		                        	{this.props.resourceFileData.homePage.welcomeMessage.buttonText}
+		                        </button>
+		                    </div>
+		                </div>
+		            </div>
+		        </section>
 			);
 		} else {
 			return null;

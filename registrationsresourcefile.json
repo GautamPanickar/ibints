@@ -1,0 +1,24 @@
+{
+	"registrations": {
+		"columnHeading":{
+			"col1":"Reg.no.",
+			"col2":"Name",
+			"col3":"Address/Location",
+			"col4":"Remarks"
+		},
+		"clients": {
+			"reg1":{
+				"regNo":"1234",
+				"name":"Paul Devassy",
+				"location":"Kattakkada, Trivandrum",
+				"remarks":"Really good people to trust with a work."
+			},
+			"reg2":{
+				"regNo":"7814",
+				"name":"Arun Natarajan",
+				"location":"Panampilly Nagar, Kochi",
+				"remarks":"Do it like iBints! Very professional."
+			}		
+		}
+	}	
+}

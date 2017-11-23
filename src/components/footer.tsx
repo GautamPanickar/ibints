@@ -7,7 +7,6 @@ interface Props {
 // This is a stateless component
 export const Footer = (props: Props) => {
 	return (
-	<div>
 		<section className="bg-primary" id="footer">
 	        <div className="container">
 	            <div className="row">
@@ -17,5 +16,5 @@ export const Footer = (props: Props) => {
 	            </div>
 	        </div>
 	    </section>
-    </div>);
+	    );
 }

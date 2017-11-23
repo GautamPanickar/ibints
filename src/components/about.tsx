@@ -21,10 +21,8 @@ class About extends React.Component<Props, State> {
 		        <div className="container">
 		            <div className="row">	  
 		                <div className="col-lg-6">
-			                <div className="hover08 column">
-							    <div>
-							        <figure><img src="img/about.jpg" /></figure>
-							    </div>
+			                <div className="hover01 column">
+							    <figure><img src="img/about.jpg" /></figure>
 							 </div>
 						</div>
 						<div className="col-lg-6 text-left">
@@ -43,8 +41,9 @@ class About extends React.Component<Props, State> {
 		    </section>);
 	}	
 
-	private onViewVision = () => {
-		this.props.onVisionViewButtonCick;
+	// on view vision button click.
+	private onViewVision = ():void => {
+		this.props.onVisionViewButtonCick();
 	}
 }
 

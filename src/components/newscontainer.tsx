@@ -5,9 +5,12 @@ import {LoadingIndicator} from '../components/loadingindicator';
 import newsStore =  require('../stores/newsstore');
 import newsActionCreator = require('../actioncreators/newsactioncreator');
 import enums = require('../utilities/enums');
+import HTMLUtilities = require('../utilities/htmlutilities');
 
 interface Props {
   resourceFileData?: any;
+  newsResourceFileData?: any;
+  onAboutClick?:Function;
 }
 
 interface State {
@@ -53,7 +56,7 @@ class NewsContainer extends React.Component<Props, State> {
                             </a>
                         </div>                         
                         <div className='center-alignment'>
-                            <button className="btn btn-default-dark btn-xl page-scroll">
+                            <button className="btn btn-default-dark btn-xl page-scroll" onClick={this.onAboutClick}>
                                 {this.props.resourceFileData.homePage.aboutUs}
                             </button>
                         </div>
@@ -74,7 +77,7 @@ class NewsContainer extends React.Component<Props, State> {
   // Returns the news items
   private get newsItems(): Array<JSX.Element> {
     let newsItems:Array<JSX.Element> = new Array<JSX.Element>();
-    let dataList = this.props.resourceFileData.newsSection;
+    let dataList = this.props.newsResourceFileData;
     let news = Object.keys(dataList).map(function(i) { return dataList[i] });
 
     // setting thte total number of news.
@@ -100,7 +103,7 @@ class NewsContainer extends React.Component<Props, State> {
           image: item.image,
           isActive: this.isNewsActive(index)
         };
-        newsItems.push(<NewsItem  news={newsToAdd} />)
+        newsItems.push(<NewsItem  key={HTMLUtilities.UID} news={newsToAdd} />)
         index++;
       }
     }
@@ -146,7 +149,12 @@ class NewsContainer extends React.Component<Props, State> {
           activeNewsIndex: newsStore.instance.indexToBeActivated,
           isLoading: false
         });
-    }, 750);
+    }, 500);
+  }
+
+  // On clicking about us button.
+  private onAboutClick =():void =>{
+    this.props.onAboutClick();
   }
 }
 

@@ -19,10 +19,8 @@ export class Vision extends React.Component<Props, null> {
 		                    <br></br>
 		                </div>
 		                <div className="col-lg-6">
-			                <div className="hover08 column">
-							    <div>
-							        <figure><img src="img/vision.jpg" /></figure>
-							    </div>
+			                <div className="hover01 column">
+							    <figure><img src="img/vision.jpg" /></figure>
 							 </div>
 						</div>
 		            </div>
